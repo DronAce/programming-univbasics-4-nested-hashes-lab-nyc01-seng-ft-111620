@@ -21,7 +21,7 @@ describe "Working with Nested Hashes -" do
     end
   end
 
-  describe "the adding_matz method" do 
+  describe "the adding_matz method" do
     it "operates on the programmer_hash and adds a key/value pair to the top level of the hash, returning the newly-added-to hash" do
       expect(adding_matz.keys).to include(:yukihiro_matsumoto)
     end
@@ -35,7 +35,7 @@ describe "Working with Nested Hashes -" do
 
   describe "the adding_to_dennis method" do
     it "operates on the programmer_hash and adds 'Assembly' to Dennis Ritchie's languages, returning the newly-added-to-hash" do
-      expect(adding_to_dennis[:dennis_ritchie][:languages][1]).to include("Assembly")
+      expect(adding_to_dennis[:dennis_ritchie][:languages]).to include("Assembly")
     end
   end
 end
